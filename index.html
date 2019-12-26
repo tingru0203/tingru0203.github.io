@@ -63,7 +63,7 @@ function startTime() {
   m = checkTime(m);
   s = checkTime(s);
   document.getElementById('txt').innerHTML = 
-  y + "年" + mon + "月" + d + "日" + h + ":" + m + ":" + s;
+  y + "年" + mon + "月" + d + "日\n" + h + ":" + m + ":" + s;
   var t = setTimeout(startTime, 500);
 }
 function checkTime(i) {
