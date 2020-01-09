@@ -7,63 +7,67 @@
       #Header{
 		width:100%;
 		height:80px;
-		text-align:center;
+        padding-left:30px;
+		text-align:left;
 		line-height:80px;
 		font-size:15px;
-        color:#ffffe0;
+        color:#228B22;
         font-weight:bold;
-        font-family:Comic Sans MS;
-        background-color:#9400d3;
+        font-family:Georgia;
+        background-color:#bfed98;
 	  }
 	  #Sidebar{
         width:25%;
         height:400px;
         float:left;
-        text-align:center;
-        line-height:30px;
-        font-size:15px;
-        color:#ffffff;
-        font-weight:bold;
-        font-family:monospace;
-        background-color:#6495ed;
+        background-color:#d0f7ad;
       }
 	  #body{
         width:75%;
         height:400px;
         float:left;
-        text-align:left;
-        line-height:30px;
-        font-size:15px;
-        color:#e0ffff;
-        font-weight:bold;
-        font-family:monospace;
-        background-color:#1e90ff;
+        background-color:#f2faeb;
       }
-	  #Footer{
-        width:100%;
-        height:100px;
+      .time{
         text-align:center;
         line-height:30px;
         font-size:15px;
-        color:#ffffe0;
+        color:#FFFFFF;
         font-weight:bold;
         font-family:monospace;
-        background-color:#9400d3;
+      }
+      .p-1{
+      	padding-right:20px;
+        text-align:right;
+        line-height:30px;
+        font-size:15px;
+        color:#FFFFFF;
+        font-weight:bold;
+        font-family:monospace;
+      }
+      .p-2{
+      	padding-left:20px;
+        text-align:left;
+        line-height:30px;
+        font-size:15px;
+        color:#696969;
+        font-weight:bold;
+        font-family:'Noto Sans TC', sans-serif;
       }
 	</style>
     <script>
 function startTime() {
   var today = new Date();
   var y = today.getFullYear();
-  var m = today.getMonth()+1;
+  var mon = today.getMonth()+1;
   var d = today.getDate();
   var h = today.getHours();
-  var min = today.getMinutes();
+  var m = today.getMinutes();
   var s = today.getSeconds();
-  min = checkTime(min);
+  m = checkTime(m);
   s = checkTime(s);
   document.getElementById('txt').innerHTML = 
-  y + "年" + m + "月" + d + "日\n" + h + ":" + min + ":" + s;
+  y + "年" + mon + "月" + d + "日" + h + ":" + m + ":" + s;
   var t = setTimeout(startTime, 500);
 }
 function checkTime(i) {
@@ -74,30 +78,34 @@ function checkTime(i) {
   </head>
   <body>
     <div id="Header">
-      <h1>Welcome</h1>
+      <h1>TINGRU LIU</h1>
     </div>
     <div id="Sidebar">
-      <body onload="startTime()">
-      <p id="txt"></p>
-      </body>
-      <ul style="list-style-type:circle;">
-  	    <li>about</li>
-  	    <li>education</li>
-        <li>experiences</li>
-	  </ul>
+      <div class="time">
+        <body onload="startTime()">
+        <p id="txt"></p>
+        </body>
+      </div>
+      <div class="p-1">
+        <ul style="list-style-type:circle;">
+  	      <li>about</li>
+  	      <li>education</li>
+          <li>experiences</li>
+	    </ul>
+      </div>
     </div>
     <div id="body">
+      <div class="p-2">
       <p>Hello!</p>
-      <div align=center><img src="https://img.lovepik.com/element/40019/1554.png_860.png" weight=100px height=100px title="cute cat" alt="cat picture"></div>
+      <div align=left><img src="https://img.lovepik.com/element/40019/1554.png_860.png" weight=100px height=100px title="cute cat" alt="cat picture"></div>
       <a href="https://www.google.com/search?q=cat&sxsrf=ACYBGNQZ9T6dyzztHGZM-2zGbhiGCdzfQA:1577345918288&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjs05a559LmAhVZWH0KHVLCDBUQ_AUoAXoECBIQAw&biw=1280&bih=529">cat</a>
       <ol>
   		<li>one</li>
   	    <li>two</li>
   		<li>three</li>
 	  </ol>
-    </div>
-    <div id="Footer">
-      <p>time</p>
+      </div>
     </div>
   </body>
 </html>
+
