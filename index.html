@@ -18,28 +18,28 @@
 	  }
 	  #Sidebar{
         width:25%;
-        height:400px;
+        height:500px;
         float:left;
         background-color:#d0f7ad;
       }
 	  #body{
         width:75%;
-        height:400px;
+        height:500px;
         float:left;
         background-color:#f2faeb;
       }
       .time{
         text-align:center;
-        line-height:30px;
+        line-height:50px;
         font-size:25px;
         color:#FFFFFF;
         font-weight:bold;
         font-family:monospace;
       }
       .p-1{
-      	padding-right:20px;
-        text-align:right;
-        line-height:30px;
+      	padding-left:20px;
+        text-align:left;
+        line-height:50px;
         font-size:25px;
         color:#FFFFFF;
         font-weight:bold;
@@ -48,7 +48,7 @@
       .p-2{
       	padding-left:20px;
         text-align:left;
-        line-height:30px;
+        line-height:50px;
         font-size:25px;
         color:#696969;
         font-weight:bold;
@@ -67,7 +67,7 @@ function startTime() {
   m = checkTime(m);
   s = checkTime(s);
   document.getElementById('txt').innerHTML = 
-  y + "年" + mon + "月" + d + "日" + h + ":" + m + ":" + s;
+  y + "年" + mon + "月" + d + "日\n" + h + ":" + m + ":" + s;
   var t = setTimeout(startTime, 500);
 }
 function checkTime(i) {
@@ -90,7 +90,7 @@ function checkTime(i) {
         <ul style="list-style-type:circle;">
   	      <li>about</li>
   	      <li>education</li>
-          <li>experiences</li>
+          <li>interests</li>
 	    </ul>
       </div>
     </div>
@@ -108,4 +108,3 @@ function checkTime(i) {
     </div>
   </body>
 </html>
-
