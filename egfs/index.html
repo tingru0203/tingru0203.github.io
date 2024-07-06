@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Reprojection Errors as Prompts for Efficient Scene Coordinate Regression">
+  <meta property="og:title" content="Reprojection Errors as Prompts for Efficient Scene Coordinate Regression"/>
+  <meta property="og:description" content="We introduce an error-guided feature selection (EGFS) mechanism, achieving accurate visual localization and outperforming existing scene coordinate regression methods that do not rely on 3D information."/>
+  <meta property="og:url" content=""/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/training_overview.jpg" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="Reprojection Errors as Prompts for Efficient Scene Coordinate Regression">
+  <meta name="twitter:description" content="We introduce an error-guided feature selection (EGFS) mechanism, achieving accurate visual localization and outperforming existing scene coordinate regression methods that do not rely on 3D information.">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/training_overview.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="visual localization, scene coordinate regression, SCR, reprojection error, EGFS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Reprojection Errors as Prompts for Efficient Scene Coordinate Regression</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Reprojection Errors as Prompts for Efficient Scene Coordinate Regression</h1>
+          <div class="is-size-5 publication-authors" style="color: SteelBlue;">
+            <!-- Paper authors -->
+            <span class="author-block">
+              <!-- <a href="" target="_blank">Ting-Ru Liu</a>, -->
+              Ting-Ru Liu<sup>1</sup>,
+            </span>
+            <span class="author-block">
+              Hsuan-Kung Yang<sup>2</sup>,
+            </span>
+            <span class="author-block">
+              Jou-Min Liu<sup>1*</sup>,
+            </span>
+            <span class="author-block">
+              Chun-Wei Huang<sup>1*</sup>,
+            </span>
+            <br>
+            <span class="author-block">
+              Tsung-Chih Chiang<sup>1*</sup>,
+            </span>
+            <span class="author-block">
+              Quan Kong<sup>2</sup>,
+            </span>
+            <span class="author-block">
+              Norimasa Kobori<sup>2</sup>,
+            </span>
+            <span class="author-block">
+              Chun-Yi Lee<sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>National Tsing Hua University &nbsp;&nbsp; <sup>2</sup>Woven by Toyota, Inc.<br>ECCV 2024</span>
+            <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- Arxiv PDF link -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+
+              <!-- Supplementary PDF link -->
+              <!-- <span class="link-block">
+                <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Supplementary</span>
+                </a>
+              </span> -->
+
+              <!-- Github link -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span> -->
+
+              <!-- ArXiv abstract Link -->
+              <span class="link-block">
+                <a href="" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+              <!-- BibTeX Link -->
+              <span class="link-block">
+                <a href="#BibTeX"
+                class="button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-alt"></i>
+                  </span>
+                  <span>BibTeX</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Scene coordinate regression (SCR) methods have emerged as a promising area of research due to their potential for accurate visual localization. However, many existing SCR approaches train on samples from all image regions, including dynamic objects and texture-less areas. Utilizing these areas for optimization during training can potentially hamper the overall performance and efficiency of the model. In this study, we first perform an in-depth analysis to validate the adverse impacts of these areas. Drawing inspiration from our analysis, we then introduce an error-guided feature selection (EGFS) mechanism, in tandem with the use of the Segment Anything Model (SAM). This mechanism seeds low reprojection areas as prompts and expands them into error-guided masks, and then utilizes these masks to sample points and filter out problematic areas in an iterative manner. The experiments demonstrate that our method outperforms existing SCR approaches that do not rely on 3D information on the Cambridge Landmarks and Indoor6 datasets.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Overview -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Overview</h2>
+      <img src="static/images/training_overview.jpg" alt="overview"/>
+      <h2 class="content has-text-justified">
+        The proposed training framework iteratively samples features to train a scene-specific MLP, which consists of a scene coordinate head and a confidence head. In each iteration, the model is trained for <i>k</i> epochs. During the initial iteration, features are randomly sampled from all parts of images in order to derive the first set of reprojection errors. In subsequent iterations, features are selected based on error-guided feature selection (EGFS) masks generated according to reprojection errors and a confidence map.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End overview -->
+
+
+<!-- Video -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Results</h2>
+      <div id="results-carousel" class="carousel results-carousel video-container">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop width="90%">
+            <source src="static/videos/EGFS_mask_KingsCollege.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop width="90%">
+            <!-- Your video file here -->
+            <source src="static/videos/EGFS_mask_OldHospital.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop width="90%">\
+            <!-- Your video file here -->
+            <source src="static/videos/EGFS_mask_scene1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video -->
+
+
+<!-- Comparision -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Comparision: w/ and w/o EFGS masks</h2>
+      <div class="title-container">
+        <h2 class="subtitle is-6"></h2>
+        <h2 class="subtitle is-6">w/o EGFS masks</h2>
+        <h2 class="subtitle is-6">w/ EGFS masks</h2>
+        <h2 class="subtitle is-6"></h2>
+      </div>
+      <div class="video-container">  
+        <video poster="" id="video1" autoplay muted loop width="70%">
+          <source src="static/videos/EGFS_com_GreatCourt_sc.mp4"
+          type="video/mp4">
+        </video>
+      </div>
+      <div class="video-container">  
+        <video poster="" id="video1" autoplay muted loop width="70%">
+          <source src="static/videos/EGFS_com_StMarysChurch_sc.mp4"
+          type="video/mp4">
+        </video>
+      </div>
+      <div class="video-container">  
+        <video poster="" id="video2" autoplay muted loop width="70%">
+          <source src="static/videos/EGFS_com_scene3_sc.mp4"
+          type="video/mp4">
+        </video>
+      </div>
+      <div class="video-container">  
+        <video poster="" id="video2" autoplay muted loop width="70%">
+          <source src="static/videos/EGFS_com_scene1_sc.mp4"
+          type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End comparision -->
+
+
+<!-- Visualization -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Visualization</h2>
+      <img src="static/images/qualitative_supp.png" alt="visualization"/>
+      <h2 class="content has-text-justified">
+        (c) illustrates the point prompts selected from (b) with low reprojection errors, while (d) presents an error-guided mask expanded from the prompted points in (c) using SAM. (f) displays the proposed error-guided feature selection (EGFS), which refines the mask from (d) with the predicted confidence map (e).
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End visualization -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre>
+<code>@inproceedings{liu2024reprojection,
+  title={Reprojection Errors as Prompts for Efficient Scene Coordinate Regression},
+  author={Ting-Ru Liu and Hsuan-Kung Yang and Jou-Min Liu and Chun-Wei Huang and Tsung-Chih Chiang and Quan Kong and Norimasa Kobori and Chun-Yi Lee},
+  booktitle={ECCV},
+  year={2024}
+}</code>
+    </pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-10">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page. <br>
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
